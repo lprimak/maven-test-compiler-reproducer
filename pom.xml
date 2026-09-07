@@ -66,22 +66,7 @@
             <properties>
                 <test.plugin.version>3.5.6</test.plugin.version>
                 <compiler.plugin.version>3.15.0</compiler.plugin.version>
-                <exception.from.testng>false</exception.from.testng>
             </properties>
-            <build>
-                <plugins>
-                    <plugin>
-                        <artifactId>maven-surefire-plugin</artifactId>
-                        <dependencies>
-                            <dependency>
-                                <groupId>org.apache.maven.surefire</groupId>
-                                <artifactId>surefire-testng</artifactId>
-                                <version>${test.plugin.version}</version>
-                            </dependency>
-                        </dependencies>
-                    </plugin>
-                </plugins>
-            </build>
         </profile>
     </profiles>
 </project>
