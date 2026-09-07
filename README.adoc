@@ -4,16 +4,22 @@ This project has been automatically generated using the
 https://start.flowlogix.com[FlowLogix Quick Start] tool from the
 https://github.com/flowlogix/archetype[FlowLogix Starter] archetype.
 
-== Running in development mode with live reload
+== Running tests - See failing result
 [source,shell]
 ----
-./mvnw package server:dev
+./mvnw package
 ----
 
-== Running the tests
+== Running tests - See multiple calls to TestNG Suite Listener
 [source,shell]
 ----
-./mvnw verify
+./mvnw package -Dexception.from.testng=false
+----
+
+== Running the tests - See success with previous plugins
+[source,shell]
+----
+./mvnw package -Pprevious-plugins
 ----
 
 == Regenerating the project
