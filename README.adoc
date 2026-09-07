@@ -19,7 +19,7 @@ https://github.com/flowlogix/archetype[FlowLogix Starter] archetype.
 == Running the tests - See only a single call to TestNG Listener with previous plugins
 [source,shell]
 ----
-./mvnw package -Pprevious-plugin,testng
+./mvnw package -Pprevious-testng
 ----
 
 == Running the tests - See success with previous plugins
