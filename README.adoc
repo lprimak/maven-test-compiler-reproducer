@@ -16,6 +16,12 @@ https://github.com/flowlogix/archetype[FlowLogix Starter] archetype.
 ./mvnw package -Dexception.from.testng=false
 ----
 
+== Running the tests - See only a single call to TestNG Listener with previous plugins
+[source,shell]
+----
+./mvnw package -Pprevious-plugin,testng
+----
+
 == Running the tests - See success with previous plugins
 [source,shell]
 ----
